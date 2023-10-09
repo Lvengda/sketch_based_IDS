@@ -8,11 +8,12 @@
 
 ### The relavant code is preparing...
 
-### Data Structure of Sketch
+### Framework
 
 <div align="center">
-<img src="img/sketch.png" width="300px">
+<img src="img/framework.png" width="700px">
 </div>
+
 
 ### Environment
 - Platform：Windows
