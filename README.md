@@ -9,9 +9,11 @@
 ### The relavant code is preparing...
 
 ### Data Structure of Sketch
+
 <div align="center">
 <img src="img/sketch.png" width="300px">
 </div>
+
 ### Environment
 - Platform：Windows
 - IDE: Visual Studio 2022
