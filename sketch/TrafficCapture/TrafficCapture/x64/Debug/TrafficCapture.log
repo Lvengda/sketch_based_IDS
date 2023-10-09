@@ -1,17 +1,16 @@
-﻿  Traffic.cpp
-E:\工业互联网\sketch\TrafficCapture\TrafficCapture\res\Include\xxhash32.h(90,23): warning C4244: “=”: 从“__int64”转换到“unsigned int”，可能丢失数据
-  LINK : 没有找到 E:\工业互联网\sketch\TrafficCapture\x64\Debug\TrafficCapture.exe 或上一个增量链接没有生成它；正在执行完全链接
-Traffic.obj : error LNK2019: 无法解析的外部符号 pcap_open_live，函数 "int __cdecl set_handler(int,char * *)" (?set_handler@@YAHHPEAPEAD@Z) 中引用了该符号
-Traffic.obj : error LNK2019: 无法解析的外部符号 pcap_breakloop，函数 "unsigned int __cdecl break_handler(void *)" (?break_handler@@YAIPEAX@Z) 中引用了该符号
-Traffic.obj : error LNK2019: 无法解析的外部符号 pcap_setfilter，函数 "int __cdecl set_handler(int,char * *)" (?set_handler@@YAHHPEAPEAD@Z) 中引用了该符号
-Traffic.obj : error LNK2019: 无法解析的外部符号 pcap_compile，函数 "int __cdecl set_handler(int,char * *)" (?set_handler@@YAHHPEAPEAD@Z) 中引用了该符号
-Traffic.obj : error LNK2019: 无法解析的外部符号 pcap_freecode，函数 "int __cdecl set_handler(int,char * *)" (?set_handler@@YAHHPEAPEAD@Z) 中引用了该符号
-Traffic.obj : error LNK2019: 无法解析的外部符号 pcap_datalink，函数 "int __cdecl set_handler(int,char * *)" (?set_handler@@YAHHPEAPEAD@Z) 中引用了该符号
-Traffic.obj : error LNK2019: 无法解析的外部符号 pcap_findalldevs，函数 "int __cdecl set_handler(int,char * *)" (?set_handler@@YAHHPEAPEAD@Z) 中引用了该符号
-Traffic.obj : error LNK2019: 无法解析的外部符号 pcap_freealldevs，函数 "int __cdecl set_handler(int,char * *)" (?set_handler@@YAHHPEAPEAD@Z) 中引用了该符号
-Traffic.obj : error LNK2019: 无法解析的外部符号 pcap_setbuff，函数 "int __cdecl set_handler(int,char * *)" (?set_handler@@YAHHPEAPEAD@Z) 中引用了该符号
-Traffic.obj : error LNK2019: 无法解析的外部符号 pcap_createsrcstr，函数 "int __cdecl set_handler(int,char * *)" (?set_handler@@YAHHPEAPEAD@Z) 中引用了该符号
-Traffic.obj : error LNK2019: 无法解析的外部符号 pcap_findalldevs_ex，函数 "int __cdecl set_handler(int,char * *)" (?set_handler@@YAHHPEAPEAD@Z) 中引用了该符号
-.\res\Lib\wpcap.lib : warning LNK4272: 库计算机类型“x86”与目标计算机类型“x64”冲突
-.\res\Lib\Packet.lib : warning LNK4272: 库计算机类型“x86”与目标计算机类型“x64”冲突
-E:\工业互联网\sketch\TrafficCapture\x64\Debug\TrafficCapture.exe : fatal error LNK1120: 11 个无法解析的外部命令
+﻿  main.cpp
+C:\Users\mlnba\Desktop\sketch_based_IDS\sketch\TrafficCapture\TrafficCapture\res\Include\xxhash32.h(90,23): warning C4244: “=”: 从“__int64”转换到“unsigned int”，可能丢失数据
+C:\Users\mlnba\Desktop\sketch_based_IDS\sketch\TrafficCapture\TrafficCapture\LTC.h(27,18): warning C4244: “=”: 从“uint64_t”转换到“int”，可能丢失数据
+C:\Users\mlnba\Desktop\sketch_based_IDS\sketch\TrafficCapture\TrafficCapture\LTC.h(175,15): warning C4244: “初始化”: 从“uint64_t”转换到“int”，可能丢失数据
+main.obj : error LNK2019: 无法解析的外部符号 __imp_ntohs，函数 "unsigned int __cdecl get_flow_id(unsigned char const *,int,short *)" (?get_flow_id@@YAIPEBEHPEAF@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 pcap_open_live，函数 "struct pcap * __cdecl set_handler(void)" (?set_handler@@YAPEAUpcap@@XZ) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 pcap_open_offline，函数 "void __cdecl read_label_file(void)" (?read_label_file@@YAXXZ) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 pcap_close，函数 "void __cdecl read_label_file(void)" (?read_label_file@@YAXXZ) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 pcap_loop，函数 main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 pcap_next_ex，函数 "void __cdecl read_label_file(void)" (?read_label_file@@YAXXZ) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 pcap_breakloop，函数 "unsigned int __cdecl break_handler(void *)" (?break_handler@@YAIPEAX@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 pcap_datalink，函数 "struct pcap * __cdecl set_handler(void)" (?set_handler@@YAPEAUpcap@@XZ) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 pcap_findalldevs，函数 "struct pcap * __cdecl set_handler(void)" (?set_handler@@YAPEAUpcap@@XZ) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 pcap_freealldevs，函数 "struct pcap * __cdecl set_handler(void)" (?set_handler@@YAPEAUpcap@@XZ) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 pcap_setbuff，函数 "struct pcap * __cdecl set_handler(void)" (?set_handler@@YAPEAUpcap@@XZ) 中引用了该符号
+C:\Users\mlnba\Desktop\sketch_based_IDS\sketch\TrafficCapture\x64\Debug\TrafficCapture.exe : fatal error LNK1120: 11 个无法解析的外部命令
