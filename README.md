@@ -10,7 +10,7 @@
 
 ### Data Structrue of Sketch
 <div align="center">
-<img src="img/sketch.png" width="600px">
+<img src="img/sketch.png" width="300px">
 </div>
 ### Environment
 - Platform：Windows
