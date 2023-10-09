@@ -8,7 +8,7 @@
 
 ### The relavant code is preparing...
 
-### Data Structrue of Sketch
+### Data Structure of Sketch
 <div align="center">
 <img src="img/sketch.png" width="300px">
 </div>
