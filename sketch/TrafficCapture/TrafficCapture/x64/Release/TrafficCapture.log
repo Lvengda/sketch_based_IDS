@@ -1,0 +1,11 @@
+﻿  Traffic.cpp
+C:\Users\mlnba\Desktop\apnet\code\code\TrafficCapture\TrafficCapture\res\Include\xxhash32.h(90,23): warning C4244: “=”: 从“__int64”转换到“unsigned int”，可能丢失数据
+C:\Users\mlnba\Desktop\apnet\code\code\TrafficCapture\TrafficCapture\MaskSketch.h(75,1): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  main.cpp
+C:\Users\mlnba\Desktop\apnet\code\code\TrafficCapture\TrafficCapture\res\Include\xxhash32.h(90,23): warning C4244: “=”: 从“__int64”转换到“unsigned int”，可能丢失数据
+C:\Users\mlnba\Desktop\apnet\code\code\TrafficCapture\TrafficCapture\MaskSketch.h(75,1): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  正在生成代码
+  Previous IPDB not found, fall back to full compilation.
+  All 156 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  TrafficCapture.vcxproj -> C:\Users\mlnba\Desktop\apnet\code\code\TrafficCapture\x64\Release\TrafficCapture.exe
