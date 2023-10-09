@@ -11,8 +11,9 @@
 ### Framework
 
 <div align="center">
-<img src="img/frmwk.png" width="800px">
+<img src="img/framework.png" width="800px">
 </div>
+
 
 
 ### Environment
