@@ -9,7 +9,7 @@ HANDLE capture_break;
 bool HANDLE_FLAG = true;
 LTC ltc_online(300, 5, 10000, 4, Lower, Middle, Upper, Period, 100);
 
-bool online = false;
+bool online = true;
 //string input_pcap = "./data/synthesize_100.pcap";
 string input_pcap = "./data/op_test.pcap";
 string recall_file = "./data/result.txt";
@@ -39,13 +39,11 @@ void grid_search(const char* input, const char* output_file) {
 }
 
 int main() {
-
-	cout << "reading label file..." << endl;
-	//read_label_file();
-
 	if (!online) {
 		//grid_search(input_pcap.c_str(), "grid.txt");
 
+		//cout << "reading label file..." << endl;
+		//read_label_file();
 		FILE* fp = fopen(recall_file.c_str(), "w");
 		if (fp == NULL)
 			cout << "failed to write to file: " << recall_file << endl, exit(-1);
@@ -59,7 +57,6 @@ int main() {
 	}
 	
 	/*-----------------------------------online-----------------------------------*/
-
 	/* set capture stop signal */
 	signal(SIGINT, sig_handler);
 	capture_break = (HANDLE)_beginthreadex(NULL, 0, break_handler, 0, 0, NULL);
@@ -225,7 +222,10 @@ uint32_t get_flow_id(const u_char* pktdata, int seed, short* payload) {
 		dp = ntohs(uh->dport);
 	}
 
-	else cout <<(uint16_t)ih->proto<< " not tcp or udp." << endl, exit(-1);
+	else {
+		cout << (uint16_t)ih->proto << " not tcp|ipv4 or udp|ipv4." << endl;
+		return 0;
+	}
 
 	BOBHash32* bob = new BOBHash32(seed);
 	
@@ -385,6 +385,8 @@ void packet_handler(u_char* param, const struct pcap_pkthdr* header, const u_cha
 	arr_time = (uint64_t)header->ts.tv_sec * 1000000 + header->ts.tv_usec;		// to the microsecond
 	payload = header->len;
 	id = get_flow_id(pkt_data, Seed, &payload);
-
-	ltc_online.insert(id, arr_time, payload);
+	if (id != 0) {
+		cout << "insert: {" << arr_time << "," << id << "," << payload << "}" << endl;
+		ltc_online.insert(id, arr_time, payload);
+	}
 }

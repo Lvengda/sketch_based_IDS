@@ -9,6 +9,7 @@ public:
 	uint8_t** Filter;
 	//int d, w, m, k, M1, M2, seed;
 	int d, w, m, k, seed;
+	bool first_pkt = true;
 	//set<uint32_t> filter;
 
 
@@ -145,6 +146,11 @@ public:
 	}
 
 	int insert(uint32_t flow_id, uint64_t arr_time, short payload_size) {
+		if (first_pkt) {
+			last_t = arr_time;
+			first_pkt = false;
+		}
+
 		if (query_filter(&flow_id)) {
 			return 1;
 		}

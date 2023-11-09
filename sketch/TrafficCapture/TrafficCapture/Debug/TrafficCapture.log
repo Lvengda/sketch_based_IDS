@@ -1,4 +1,4 @@
 ﻿  main.cpp
-C:\Users\mlnba\Desktop\sketch_based_IDS\sketch\TrafficCapture\TrafficCapture\LTC.h(27,18): warning C4244: “=”: 从“uint64_t”转换到“int”，可能丢失数据
-C:\Users\mlnba\Desktop\sketch_based_IDS\sketch\TrafficCapture\TrafficCapture\LTC.h(175,15): warning C4244: “初始化”: 从“uint64_t”转换到“int”，可能丢失数据
+C:\Users\mlnba\Desktop\sketch_based_IDS\sketch\TrafficCapture\TrafficCapture\LTC.h(28,18): warning C4244: “=”: 从“uint64_t”转换到“int”，可能丢失数据
+C:\Users\mlnba\Desktop\sketch_based_IDS\sketch\TrafficCapture\TrafficCapture\LTC.h(181,15): warning C4244: “初始化”: 从“uint64_t”转换到“int”，可能丢失数据
   TrafficCapture.vcxproj -> C:\Users\mlnba\Desktop\sketch_based_IDS\sketch\TrafficCapture\Debug\TrafficCapture.exe
